@@ -1,0 +1,130 @@
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+min-height: 100vh;
+background-color: #f0fdff;
+}
+
+.game-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border: 1px solid #1ecbe1;
+    padding:  35px 15px;
+    border-radius: 10px;
+    background-color: #faeceb;
+    font-family: 'Roboto';
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media screen and (min-width:768px){
+    .game-container{
+        width: 40%;
+        padding:  50px 15px;
+    }
+}
+
+.app-title{
+    margin-bottom: 25px;
+    color: #1ecbe1;
+}
+
+.qr-para{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.user-name-input-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (min-width:768px){
+    .user-name-input-container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.user-name-input-container input{
+    background-color: #f0fdff;
+    border: 1px solid #1ecbe1;
+    padding: 5px 10px;
+    width: 85%;
+    height: 35px;
+    border-radius: 3px;
+    outline: none;
+    font-size: 16px;
+}
+
+@media screen and (min-width:768px){
+    .user-name-input-container input{
+        width: 75%;
+    }
+}
+
+.user-name-input-container button{
+    background-color: #1ecbe1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 24px;
+    align-self: center;
+    margin-top: 15px;
+    color: #faeceb;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+@media screen and (min-width:768px){
+    .user-name-input-container button{
+        padding: 9px 14px;
+        margin: 0;
+        height: auto;
+        border-radius: 3px;
+    }
+}
+
+.user-name-input-container button:hover{
+    transform: scale(1.02);
+}
+
+.user-name-input-container button:active{
+    transform: scale(0.96);
+}
+
+.question{
+    color: #4d4e50;
+    margin-bottom: 10px;
+}
+
+.mcq-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.mcq-container button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-self: flex-start;
+    font-weight: 600;
+    margin: 5px 0;
+    color: #6d6d77;
+}
+
+.feedback{
+    color: red;
+    font-size: 18px;
+    margin-top: 15px;
+}
